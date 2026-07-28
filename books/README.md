@@ -19,3 +19,10 @@ Bu klasör, `docs/` altındaki modüler proje belgelerinin fiziksel çıktı ve 
 - Sıralama, her birleşik dosyanın içindekiler bölümünde sabittir.
 - Kaynak sınırları `<!-- SOURCE: ... -->` yorumlarıyla izlenebilir.
 - Modüler belge değiştiğinde ilgili birleşik dosya da aynı değişiklik kapsamında güncellenmelidir.
+
+## v0.2 ekleri
+
+- `volume-05-system-architecture.md`: Sistem mimarisi cildi.
+- `engineering-handbook-v0.2.md`: İlk beş cildi içeren birleşik kitap.
+
+Birleşik Markdown dosyalarında bölüm geçişleri yatay ayırıcıyla yapılır; zorunlu sayfa sonu eklenmez.
