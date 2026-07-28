@@ -18,6 +18,8 @@ Bu bölüm, Akıllı Alışveriş Asistanı'nın ilk uygulanabilir mimarisini ta
 8. [Gözlemlenebilirlik ve operasyon](observability-and-operations.md)
 9. [ADR-0003: Modüler monolit yaklaşımı](adr/ADR-0003-modular-monolith.md)
 10. [ADR-0004: Asenkron iş hattı ve outbox](adr/ADR-0004-async-pipeline-and-outbox.md)
+11. [Hibrit ve semantik ürün arama mimarisi](search/README.md)
+12. [ADR-0005: PostgreSQL tabanlı hibrit arama](adr/ADR-0005-postgresql-hybrid-search.md)
 
 ## Mimari hedefler
 
@@ -28,6 +30,8 @@ Bu bölüm, Akıllı Alışveriş Asistanı'nın ilk uygulanabilir mimarisini ta
 - Her fiyatın kaynağını ve zamanını izleyebilmek.
 - POC ile üretim mimarisi arasında gereksiz yeniden yazımı azaltmak.
 - İlk aşamada operasyonel karmaşıklığı düşük tutmak.
+- Günlük dildeki kullanıcı sorgularını kategori, özellik ve kullanım amacına dönüştürmek.
+- Semantik yakınlığı kesin ürün özellikleriyle dengelemek.
 
 ## Mimari olmayan hedefler
 

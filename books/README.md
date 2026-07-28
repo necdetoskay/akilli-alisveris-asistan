@@ -8,7 +8,11 @@ Bu klasör, `docs/` altındaki modüler proje belgelerinin fiziksel çıktı ve 
 2. [Cilt 02 — Ürün Vizyonu](volume-02-product-vision.md)
 3. [Cilt 03 — POC Tanımı ve Doğrulama](volume-03-poc.md)
 4. [Cilt 04 — Domain ve Product Identity](volume-04-domain.md)
-5. [Engineering Handbook v0.1](engineering-handbook-v0.1.md)
+5. [Cilt 05 — Sistem Mimarisi](volume-05-system-architecture.md)
+6. [Cilt 06 — Hibrit ve Semantik Ürün Araması](volume-06-hybrid-semantic-search.md)
+7. [Engineering Handbook v0.1](engineering-handbook-v0.1.md)
+8. [Engineering Handbook v0.2](engineering-handbook-v0.2.md)
+9. [Engineering Handbook v0.3](engineering-handbook-v0.3.md)
 
 ## Kullanım İlkeleri
 
@@ -24,5 +28,10 @@ Bu klasör, `docs/` altındaki modüler proje belgelerinin fiziksel çıktı ve 
 
 - `volume-05-system-architecture.md`: Sistem mimarisi cildi.
 - `engineering-handbook-v0.2.md`: İlk beş cildi içeren birleşik kitap.
+
+## v0.3 ekleri
+
+- `volume-06-hybrid-semantic-search.md`: Hibrit ve semantik ürün arama cildi.
+- `engineering-handbook-v0.3.md`: İlk altı cildi içeren birleşik kitap.
 
 Birleşik Markdown dosyalarında bölüm geçişleri yatay ayırıcıyla yapılır; zorunlu sayfa sonu eklenmez.

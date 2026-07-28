@@ -4,3 +4,4 @@ Bu klasör sistem mimarisine ilişkin kalıcı kararları içerir.
 
 - [ADR-0003 — Modüler monolit](ADR-0003-modular-monolith.md)
 - [ADR-0004 — Asenkron pipeline ve transactional outbox](ADR-0004-async-pipeline-and-outbox.md)
+- [ADR-0005 — PostgreSQL tabanlı hibrit ürün araması](ADR-0005-postgresql-hybrid-search.md)
