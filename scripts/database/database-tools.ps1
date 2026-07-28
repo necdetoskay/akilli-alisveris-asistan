@@ -1,6 +1,25 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+function Initialize-DatabaseEnvironment {
+    [CmdletBinding()]
+    param()
+
+    if (-not $env:POSTGRES_USER) {
+        $env:POSTGRES_USER = "akilli_alisveris"
+    }
+
+    if (-not $env:POSTGRES_DB) {
+        $env:POSTGRES_DB = "akilli_alisveris"
+    }
+
+    if (-not $env:POSTGRES_PASSWORD) {
+        $env:POSTGRES_PASSWORD = "akilli_alisveris_dev"
+    }
+}
+
+Initialize-DatabaseEnvironment
+
 function Get-DatabaseSettings {
     [CmdletBinding()]
     param()
