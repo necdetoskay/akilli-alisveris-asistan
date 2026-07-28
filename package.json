@@ -21,7 +21,10 @@
     "typecheck": "turbo run typecheck",
     "test:deploy": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/remote-port-tools.tests.ps1",
     "deploy:remote": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./deploy/deploy-remote.ps1",
-    "remote:status": "docker compose --env-file deploy/.env.remote -p akilli-alisveris-poc ps"
+    "remote:status": "docker compose --env-file deploy/.env.remote -p akilli-alisveris-poc ps",
+    "db:migrate": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/database/migrate.ps1",
+    "db:verify": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/database/verify-database.ps1",
+    "test:database": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/database-migrations.tests.ps1"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",

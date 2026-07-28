@@ -4,8 +4,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$postgresUser = if ($env:POSTGRES_USER) { $env:POSTGRES_USER } else { "akilli_alisveris" }
-$postgresDb = if ($env:POSTGRES_DB) { $env:POSTGRES_DB } else { "akilli_alisveris" }
+. "$PSScriptRoot/database-tools.ps1"
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $migrationDirectory = Join-Path $repoRoot "database\migrations"
@@ -14,23 +13,42 @@ if (-not (Test-Path $migrationDirectory)) {
     throw "Migration directory not found: $migrationDirectory"
 }
 
-$files = Get-ChildItem -Path $migrationDirectory -Filter "*.sql" | Sort-Object Name
+$files = @(Get-ChildItem -Path $migrationDirectory -Filter "*.sql" | Sort-Object Name)
 if ($files.Count -eq 0) {
     throw "No migration files found in $migrationDirectory"
 }
 
 Push-Location $repoRoot
 try {
-    docker compose -f $ComposeFile up -d postgres
-    if ($LASTEXITCODE -ne 0) { throw "PostgreSQL container could not be started." }
+    & docker compose -f $ComposeFile up -d postgres
+    if ($LASTEXITCODE -ne 0) {
+        throw "PostgreSQL container could not be started."
+    }
+
+    Wait-PostgresReady -ComposeFile $ComposeFile
 
     foreach ($file in $files) {
-        Write-Host "Applying migration $($file.Name)..."
-        Get-Content -Raw $file.FullName | docker compose -f $ComposeFile exec -T postgres `
-            psql -v ON_ERROR_STOP=1 -U $postgresUser -d $postgresDb
+        $version = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
+        $isApplied = Invoke-PostgresSql `
+            -ComposeFile $ComposeFile `
+            -TuplesOnly `
+            -Sql "SELECT EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '$version');"
 
-        if ($LASTEXITCODE -ne 0) {
-            throw "Migration failed: $($file.Name)"
+        if ($isApplied -eq "t") {
+            Write-Host "Skipping applied migration $($file.Name)."
+            continue
+        }
+
+        Write-Host "Applying migration $($file.Name)..."
+        Invoke-PostgresSql -ComposeFile $ComposeFile -Sql (Get-Content -Raw $file.FullName) | Out-Null
+
+        $recorded = Invoke-PostgresSql `
+            -ComposeFile $ComposeFile `
+            -TuplesOnly `
+            -Sql "SELECT EXISTS (SELECT 1 FROM public.schema_migrations WHERE version = '$version');"
+
+        if ($recorded -ne "t") {
+            throw "Migration completed but was not recorded: $($file.Name)"
         }
     }
 }
