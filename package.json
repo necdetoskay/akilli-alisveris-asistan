@@ -24,7 +24,9 @@
     "remote:status": "docker compose --env-file deploy/.env.remote -p akilli-alisveris-poc ps",
     "db:migrate": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/database/migrate.ps1",
     "db:verify": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/database/verify-database.ps1",
-    "test:database": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/database-migrations.tests.ps1"
+    "test:database": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/database-migrations.tests.ps1",
+    "poc:verify": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/verify-environment.ps1",
+    "test:poc00": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/verify-environment.tests.ps1"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
