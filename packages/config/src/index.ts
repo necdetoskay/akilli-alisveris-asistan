@@ -30,7 +30,7 @@ function readRequiredString(
 }
 
 function readPort(environment: NodeJS.ProcessEnv): number {
-  const rawPort = readRequiredString(environment, "API_PORT", "3100");
+  const rawPort = readRequiredString(environment, "API_PORT", "3000");
   const port = Number(rawPort);
 
   if (!Number.isInteger(port) || port < 1 || port > 65_535) {

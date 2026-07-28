@@ -1,19 +1,47 @@
 services:
   postgres:
-    image: postgres:17-alpine
+    image: postgres:16-alpine
+    restart: unless-stopped
     environment:
-      POSTGRES_DB: akilli_alisveris
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
+      POSTGRES_DB: ${POSTGRES_DB:-akilli_alisveris}
+      POSTGRES_USER: ${POSTGRES_USER:-akilli_alisveris}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d akilli_alisveris"]
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U ${POSTGRES_USER:-akilli_alisveris} -d ${POSTGRES_DB:-akilli_alisveris}"
+        ]
       interval: 5s
       timeout: 5s
       retries: 10
+      start_period: 10s
+    networks:
+      - app_network
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      API_HOST: 0.0.0.0
+      API_PORT: 3000
+      DATABASE_URL: postgresql://${POSTGRES_USER:-akilli_alisveris}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-akilli_alisveris}
     ports:
-      - "5432:5432"
-    volumes:
-      - poc_postgres_data:/var/lib/postgresql/data
+      - "${API_PORT:-40000}:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app_network
 
 volumes:
-  poc_postgres_data:
+  postgres_data:
+
+networks:
+  app_network:
+    driver: bridge

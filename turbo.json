@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
     "build": {
@@ -17,7 +17,7 @@
       "outputs": ["coverage/**"]
     },
     "typecheck": {
-      "dependsOn": ["^typecheck"],
+      "dependsOn": ["^build"],
       "outputs": []
     }
   }

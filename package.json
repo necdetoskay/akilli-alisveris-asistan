@@ -18,7 +18,10 @@
     "lint": "eslint . --max-warnings=0",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "test:deploy": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/remote-port-tools.tests.ps1",
+    "deploy:remote": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./deploy/deploy-remote.ps1",
+    "remote:status": "docker compose --env-file deploy/.env.remote -p akilli-alisveris-poc ps"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
