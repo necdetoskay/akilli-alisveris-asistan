@@ -9,7 +9,7 @@ Prove that two representative BİM brochure pages can be converted into reliable
 - Version the two supplied brochure images as benchmark fixtures.
 - Define one strict extraction JSON schema.
 - Create manually verified golden datasets.
-- Run the OpenAI Responses API against each page.
+- Run the OpenRouter Chat Completions API against each page.
 - Record token usage, latency and calculated API cost.
 - Evaluate product recall, exact price accuracy and hallucination rate.
 - Keep model pricing configurable.
@@ -28,8 +28,8 @@ Prove that two representative BİM brochure pages can be converted into reliable
 pnpm test:poc01
 pnpm poc01:verify
 
-$env:OPENAI_API_KEY = "..."
-$env:POC01_MODEL = "gpt-4o-mini-2024-07-18"
+$env:OPENROUTER_API_KEY = "..."
+$env:POC01_MODEL = "openai/gpt-4o-mini-2024-07-18"
 $env:POC01_USD_TRY = "<test-day exchange rate>"
 pnpm poc01:benchmark
 pnpm poc01:evaluate

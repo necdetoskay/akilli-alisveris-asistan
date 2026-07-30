@@ -18,9 +18,9 @@ Patch:
 4. Preserve unrelated repository changes.
 5. Run `pnpm test:poc01` and `pnpm poc01:verify`.
 6. Review both golden datasets against the supplied images. Correct only demonstrable transcription mistakes; do not guess unreadable data.
-7. Before an API run, confirm current OpenAI pricing. Update only `config/poc-01/models.json` when rates differ.
-8. Ask the operator to provide `OPENAI_API_KEY` through the environment. Never print, commit or persist the key.
-9. Run the benchmark first with `gpt-4o-mini-2024-07-18` unless that model is unavailable. Record the exact replacement model if changed.
+7. Before an API run, confirm current OpenRouter model pricing. Update only `config/poc-01/models.json` when rates differ.
+8. Ask the operator to provide `OPENROUTER_API_KEY` through the environment. Never print, commit or persist the key.
+9. Run the benchmark first with `openai/gpt-4o-mini-2024-07-18` unless that model is unavailable. Record the exact replacement model if changed.
 10. Set `POC01_USD_TRY` to the test-day USD/TRY rate supplied or approved by the operator.
 11. Run `pnpm poc01:benchmark` and `pnpm poc01:evaluate`.
 12. Inspect `.artifacts/poc-01/<model>/evaluation.json`.
