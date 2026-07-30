@@ -30,7 +30,8 @@
     "poc01:verify": "node scripts/poc-01/verify-fixtures.mjs",
     "poc01:benchmark": "node scripts/poc-01/run-benchmark.mjs",
     "poc01:evaluate": "node scripts/poc-01/evaluate-results.mjs",
-    "test:poc01": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/poc-01.tests.ps1"
+    "test:poc01": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/poc-01.tests.ps1",
+    "poc01:benchmark:regional": "node scripts/poc-01/run-regional-benchmark.mjs"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
@@ -42,6 +43,7 @@
     "turbo": "^2.5.4",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.1",
-    "vitest": "^3.2.1"
+    "vitest": "^3.2.1",
+    "sharp": "^0.35.3"
   }
 }

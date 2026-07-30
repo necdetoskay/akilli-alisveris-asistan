@@ -62,3 +62,14 @@ Do not start production ingestion until a benchmark run establishes:
 - hallucination rate: at most 1%
 
 The golden datasets must be reviewed by a human before these thresholds are treated as final.
+
+## Regional-grid iteration
+
+The second benchmark iteration divides each brochure page into a 2x3 grid with 10% overlap, extracts each region independently with the same OpenRouter model and strict schema, and merges exact duplicate product records. This tests whether increased local resolution improves recall without moving to an expensive model.
+
+Decision targets:
+
+- product recall >= 0.85
+- exact price accuracy >= 0.95
+- hallucination rate <= 0.05
+- total cost <= 1.00 TRY per page

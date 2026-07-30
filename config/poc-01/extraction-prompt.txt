@@ -10,3 +10,11 @@ Rules:
 - Put category-specific specifications in attributes.
 - Use ISO date format YYYY-MM-DD.
 - The output must follow the supplied JSON schema exactly.
+
+Regional extraction rules:
+- The supplied image may be a crop from a larger brochure page. Extract only products visibly present in this crop.
+- Never copy the displayed price into quantity.value. quantity describes package amount such as 142 g, 1 L, 6 x 200 ml or 12 pieces.
+- Keep the printed package text in quantity.raw_text whenever readable.
+- A large currency amount near a product is price.current, not quantity.
+- When a product block is cut by the crop boundary or its name/price is incomplete, omit it unless both product identity and current price are readable.
+- Use confidence=1 only when product, variant and price are all unambiguous.
