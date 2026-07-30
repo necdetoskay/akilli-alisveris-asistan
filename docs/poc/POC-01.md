@@ -65,7 +65,21 @@ The golden datasets must be reviewed by a human before these thresholds are trea
 
 ## Regional-grid iteration
 
-The second benchmark iteration divides each brochure page into a 2x3 grid with 10% overlap, extracts each region independently with the same OpenRouter model and strict schema, and merges exact duplicate product records. This tests whether increased local resolution improves recall without moving to an expensive model.
+The third benchmark iteration uses a 2x2 grid with 12% overlap to reduce API cost and duplicate detections. It merges regional candidates using product-name similarity, brand, quantity and price; discards candidates without a visible price; and marks conflicting duplicate prices for review.
+
+Run it with:
+
+```powershell
+$env:POC01_REGION_COLUMNS = "2"
+$env:POC01_REGION_ROWS = "2"
+$env:POC01_REGION_OVERLAP = "0.12"
+$env:POC01_DEDUP_THRESHOLD = "0.72"
+pnpm poc01:benchmark:regional
+$env:POC01_EVALUATION_MODE = "regional"
+pnpm poc01:evaluate
+```
+
+The evaluator selects one result per fixture, preventing the same regional result from being counted twice when both copied and regional result files exist.
 
 Decision targets:
 

@@ -16,6 +16,12 @@ try {
     if ($gida.products.Count -ne 26) { throw "Expected 26 products in the food fixture." }
     if ($aktuel.products.Count -ne 13) { throw "Expected 13 products in the Aktuel fixture." }
 
+    $dedupModule = Get-Content -Raw .\scripts\poc-01\lib\product-dedup.mjs
+    if ($dedupModule -notmatch "mergeRegionalProducts") { throw "Regional deduplication module is missing." }
+
+    $regionalScript = Get-Content -Raw .\scripts\poc-01\run-regional-benchmark.mjs
+    if ($regionalScript -notmatch 'POC01_REGION_ROWS \?\? "2"') { throw "Regional benchmark must default to a 2x2 grid." }
+
     Write-Host "POC-01 contract tests passed." -ForegroundColor Green
 }
 finally {

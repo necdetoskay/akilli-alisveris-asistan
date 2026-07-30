@@ -2,6 +2,7 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
 import sharp from "sharp";
+import { mergeRegionalProducts } from "./lib/product-dedup.mjs";
 
 const apiKey = process.env.OPENROUTER_API_KEY;
 if (!apiKey) throw new Error("OPENROUTER_API_KEY is required.");
@@ -13,8 +14,9 @@ const usdTry = Number(process.env.POC01_USD_TRY ?? "0");
 const appUrl = process.env.OPENROUTER_APP_URL ?? "http://localhost";
 const appName = process.env.OPENROUTER_APP_NAME ?? "Akilli Alisveris Asistani POC-01 Regional";
 const columns = Number(process.env.POC01_REGION_COLUMNS ?? "2");
-const rows = Number(process.env.POC01_REGION_ROWS ?? "3");
-const overlapRatio = Number(process.env.POC01_REGION_OVERLAP ?? "0.10");
+const rows = Number(process.env.POC01_REGION_ROWS ?? "2");
+const overlapRatio = Number(process.env.POC01_REGION_OVERLAP ?? "0.12");
+const dedupThreshold = Number(process.env.POC01_DEDUP_THRESHOLD ?? "0.72");
 
 if (!Number.isInteger(columns) || columns < 1 || !Number.isInteger(rows) || rows < 1) {
   throw new Error("POC01_REGION_COLUMNS and POC01_REGION_ROWS must be positive integers.");
@@ -47,15 +49,6 @@ const sourcePath = path.join(root, fixture.image);
 const metadata = await sharp(sourcePath).metadata();
 if (!metadata.width || !metadata.height) throw new Error(`Unable to read image dimensions: ${sourcePath}`);
 
-const normalize = (value) => String(value ?? "")
-  .toLocaleLowerCase("tr-TR")
-  .replace(/[^\p{L}\p{N}]+/gu, " ")
-  .trim();
-const productKey = (product) => [
-  normalize(product.brand), normalize(product.product_name), normalize(product.variant),
-  Number(product.price?.current ?? -1).toFixed(2)
-].join("|");
-
 const regions = [];
 const cellWidth = metadata.width / columns;
 const cellHeight = metadata.height / rows;
@@ -71,7 +64,7 @@ for (let row = 0; row < rows; row += 1) {
   }
 }
 
-const mergedProducts = new Map();
+const regionalProducts = [];
 const regionReports = [];
 let catalog = null;
 let totalLatency = 0;
@@ -129,23 +122,21 @@ for (const region of regions) {
   totalCachedTokens += cachedTokens;
   totalOutputTokens += outputTokens;
   totalCostUsd += costUsd;
-  for (const product of extraction.products) {
-    const key = productKey(product);
-    const existing = mergedProducts.get(key);
-    if (!existing || Number(product.confidence ?? 0) > Number(existing.confidence ?? 0)) mergedProducts.set(key, product);
-  }
+  for (const product of extraction.products) regionalProducts.push({ region: region.id, product });
   regionReports.push({ region: region.id, bounds: region, products: extraction.products.length, latency_ms: latencyMs, cost_usd: Number(costUsd.toFixed(8)) });
   console.log(`${region.id}: ${extraction.products.length} products, $${costUsd.toFixed(8)}, ${latencyMs} ms`);
 }
 
-const products = [...mergedProducts.values()];
+const mergeResult = mergeRegionalProducts(regionalProducts, dedupThreshold);
+const products = mergeResult.products;
 const result = {
   fixture_id: fixture.id,
   benchmark_mode: "regional-grid",
   provider: "openrouter",
   model_requested: model,
   detail,
-  grid: { columns, rows, overlap_ratio: overlapRatio, regions: regionReports },
+  grid: { columns, rows, overlap_ratio: overlapRatio, dedup_threshold: dedupThreshold, regions: regionReports },
+  merge: { ...mergeResult.stats, trace: mergeResult.trace },
   latency_ms: totalLatency,
   usage: { input_tokens: totalInputTokens, cached_input_tokens: totalCachedTokens, output_tokens: totalOutputTokens, total_tokens: totalInputTokens + totalOutputTokens },
   cost: { usd: Number(totalCostUsd.toFixed(8)), source: "regional_sum", try: usdTry > 0 ? Number((totalCostUsd * usdTry).toFixed(4)) : null, usd_try_rate: usdTry > 0 ? usdTry : null },
