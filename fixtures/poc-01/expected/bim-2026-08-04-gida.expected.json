@@ -1,0 +1,635 @@
+{
+  "catalog": {
+    "retailer": "BİM",
+    "campaign_name": "Aktüel - Haftanın Önerileri",
+    "valid_from": "2026-08-04",
+    "valid_until": null,
+    "source_page": 1
+  },
+  "products": [
+    {
+      "product_name": "Yer Fıstıklı Kremalı Gofret",
+      "brand": "Centro",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 142,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "142 g"
+      },
+      "price": {
+        "current": 34,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Yer Fıstığı Ezmesi Çeşitleri",
+      "brand": "Emsal",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 1000,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "1000 g"
+      },
+      "price": {
+        "current": 169,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Şeker ilavesiz; parçacıklı seçenek",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Kakaolu Fındık Kreması",
+      "brand": "Torku Banada",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 920,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "920 g"
+      },
+      "price": {
+        "current": 255,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Gazlı İçecek Kola",
+      "brand": "Pepsi",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 4,
+        "unit": "L",
+        "package_count": 1,
+        "raw_text": "4x1 L"
+      },
+      "price": {
+        "current": 169,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Portakal Aromalı Gazlı İçecek",
+      "brand": "Yedigün",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 4,
+        "unit": "L",
+        "package_count": 1,
+        "raw_text": "4x1 L"
+      },
+      "price": {
+        "current": 169,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Portakal Jöleli Kek",
+      "brand": "Ülker Kekstra XL",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 70,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "70 g"
+      },
+      "price": {
+        "current": 14,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Çikolatalı Gofret",
+      "brand": "Tadelle",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 28,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "28 g"
+      },
+      "price": {
+        "current": 9.75,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Çikolata Dolgulu Fındıklı Bisküvi Çeşitleri",
+      "brand": "La Mole",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 140,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "140 g"
+      },
+      "price": {
+        "current": 159,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Kakaolu veya sade",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Armut ve Şeftalili Soğuk Çay",
+      "brand": "Herby",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "package_count": 1,
+        "raw_text": "250 ml"
+      },
+      "price": {
+        "current": 39.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Vişne Aromalı ve Çikolatalı Soğuk Kahve",
+      "brand": "Nescafe",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "package_count": 1,
+        "raw_text": "250 ml"
+      },
+      "price": {
+        "current": 54.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Oyuncaklı Pez Şeker Çeşitleri",
+      "brand": "Pez",
+      "category": "şekerleme",
+      "variant": null,
+      "quantity": {
+        "value": 25.5,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "25,5 g"
+      },
+      "price": {
+        "current": 129,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Spiderman veya Minions",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Ranch Sos Aromalı Çeşnili Çubuk Kraker",
+      "brand": "Eti Crax",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 175,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "175 g"
+      },
+      "price": {
+        "current": 37.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "İlk kez BİM'de",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Kalp Mozaik Pasta Bisküvi",
+      "brand": "CC Çikolata",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 300,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "300 g"
+      },
+      "price": {
+        "current": 49,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Enerji İçeceği Çeşitleri",
+      "brand": "Maxfly",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "package_count": 1,
+        "raw_text": "250 ml"
+      },
+      "price": {
+        "current": 25,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Klasik, tropikal meyve aromalı, turunç veya Hindistan cevizi aromalı",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Portakal ve Mango Aromalı Soğuk Çay",
+      "brand": "Lipton",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 1,
+        "unit": "L",
+        "package_count": 1,
+        "raw_text": "1 L"
+      },
+      "price": {
+        "current": 49.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Mısır Cipsi",
+      "brand": "Doritos",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 115,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "115 g"
+      },
+      "price": {
+        "current": 52,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Biftek ve soğan aromalı",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Mısır Çerezi",
+      "brand": "Cheetos",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 100,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "100 g"
+      },
+      "price": {
+        "current": 52,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Taco baharatlı",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Protein Bar",
+      "brand": "Fellas",
+      "category": "gıda",
+      "variant": "Çikolata kaplamalı kurabiye aromalı",
+      "quantity": {
+        "value": 50,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "50 g"
+      },
+      "price": {
+        "current": 79.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Protein Bar",
+      "brand": "Fellas",
+      "category": "gıda",
+      "variant": "Çikolata kaplamalı Hindistan cevizli",
+      "quantity": {
+        "value": 50,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "50 g"
+      },
+      "price": {
+        "current": 79.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Meyveli İçecek Limonata",
+      "brand": "Doğanay",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 2,
+        "unit": "L",
+        "package_count": 1,
+        "raw_text": "2 L"
+      },
+      "price": {
+        "current": 69.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Sakız Aromalı Gazoz",
+      "brand": "Freşa",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 200,
+        "unit": "ml",
+        "package_count": 6,
+        "raw_text": "6x200 ml"
+      },
+      "price": {
+        "current": 79.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Nohut Cipsi",
+      "brand": "Züber",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 75,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "75 g"
+      },
+      "price": {
+        "current": 69.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Ege baharatlı",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Mini Kornet Külah",
+      "brand": "Dippo",
+      "category": "gıda",
+      "variant": null,
+      "quantity": {
+        "value": 90,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "90 g"
+      },
+      "price": {
+        "current": 39,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Fındık Aromalı Soğuk Kahve Karışımı",
+      "brand": "Dr. Oetker",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 50,
+        "unit": "g",
+        "package_count": 1,
+        "raw_text": "50 g"
+      },
+      "price": {
+        "current": 39.5,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Kuzukulağı ve Limon Aromalı Gazlı İçecek",
+      "brand": "Fuska",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 250,
+        "unit": "ml",
+        "package_count": 1,
+        "raw_text": "250 ml"
+      },
+      "price": {
+        "current": 25,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Karışık Meyveli İçecek",
+      "brand": "Lavi",
+      "category": "içecek",
+      "variant": null,
+      "quantity": {
+        "value": 1,
+        "unit": "L",
+        "package_count": 1,
+        "raw_text": "1 L"
+      },
+      "price": {
+        "current": 55,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": "Karadut çilek",
+      "installment": null,
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    }
+  ]
+}

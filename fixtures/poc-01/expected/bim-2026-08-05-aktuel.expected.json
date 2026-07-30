@@ -1,0 +1,319 @@
+{
+  "catalog": {
+    "retailer": "BİM",
+    "campaign_name": "Aktüel",
+    "valid_from": "2026-08-05",
+    "valid_until": null,
+    "source_page": 1
+  },
+  "products": [
+    {
+      "product_name": "Abra A5 V21.5.7 Oyun Bilgisayarı",
+      "brand": "Monster",
+      "category": "bilgisayar",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 34490,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 12,
+        "description": "Peşin fiyatına 12 taksit"
+      },
+      "attributes": {
+        "gpu": "NVIDIA GeForce RTX 3050 4 GB",
+        "os": "Windows 11 Home"
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Tulpar TD3 V1.9.6.3 Oyun Bilgisayarı Beyaz",
+      "brand": "Monster",
+      "category": "masaüstü bilgisayar",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 70990,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 12,
+        "description": "Peşin fiyatına 12 taksit"
+      },
+      "attributes": {
+        "cpu": "Intel Core i5-14400F",
+        "gpu": "AMD Radeon RX 9060 XT OC 16 GB",
+        "memory": "16 GB DDR5",
+        "storage": "1 TB M.2 NVMe SSD",
+        "os": "Windows 11 Home"
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Tulpar T7 V26.4.1 Oyun Bilgisayarı",
+      "brand": "Monster",
+      "category": "bilgisayar",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 70990,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 12,
+        "description": "Peşin fiyatına 12 taksit"
+      },
+      "attributes": {
+        "cpu": "Intel Core Ultra 9 185H",
+        "gpu": "NVIDIA GeForce RTX 5060 8 GB",
+        "memory": "32 GB DDR5",
+        "storage": "500 GB M.2 NVMe SSD",
+        "display": "17.3 inç 1920x1080 144 Hz",
+        "os": "Windows 11 Home"
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "12 kW Hibrit İnverter + 57.1 kWh Batarya Seti",
+      "brand": "Jinko / Dyness",
+      "category": "enerji sistemi",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 229000,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "3,55 kWh Batarya Ek Kapasite Modülü",
+      "brand": "Dyness",
+      "category": "enerji sistemi",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 59000,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "12'li Jinko Solar 625N-BDV Güneş Paneli",
+      "brand": "Jinko Solar",
+      "category": "güneş paneli",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 99000,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Kaave Dual Pro Türk Kahve Makinesi",
+      "brand": "Fakir Hausgeräte",
+      "category": "küçük ev aleti",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 6490,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Peluş Zürafa",
+      "brand": "Gran Toys",
+      "category": "oyuncak",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 525,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {
+        "height_cm": 100
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Peluş Timsah",
+      "brand": "Gran Toys",
+      "category": "oyuncak",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 850,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {
+        "height_cm": 110
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "Peluş Papyonlu Ayıcık",
+      "brand": "Gran Toys",
+      "category": "oyuncak",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 1050,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {
+        "height_cm": 115
+      },
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "3 Kapaklı 4 Bölmeli Çok Amaçlı Dolap",
+      "brand": "Mirobi",
+      "category": "mobilya",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 3450,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "2 Kapaklı 6 Bölmeli Aynalı Çok Amaçlı Dolap",
+      "brand": "Mirobi",
+      "category": "mobilya",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 5750,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    },
+    {
+      "product_name": "6 Bölmeli 4 Kapaklı Çok Amaçlı Dolap",
+      "brand": "Mirobi",
+      "category": "mobilya",
+      "variant": null,
+      "quantity": null,
+      "price": {
+        "current": 4150,
+        "previous": null,
+        "currency": "TRY",
+        "price_type": "adet"
+      },
+      "campaign": null,
+      "installment": {
+        "count": 6,
+        "description": "Peşin fiyatına 6 taksit"
+      },
+      "attributes": {},
+      "confidence": 1.0,
+      "needs_review": false,
+      "uncertainty_reason": null
+    }
+  ]
+}

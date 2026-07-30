@@ -26,7 +26,11 @@
     "db:verify": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/database/verify-database.ps1",
     "test:database": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/database-migrations.tests.ps1",
     "poc:verify": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/verify-environment.ps1",
-    "test:poc00": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/verify-environment.tests.ps1"
+    "test:poc00": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/verify-environment.tests.ps1",
+    "poc01:verify": "node scripts/poc-01/verify-fixtures.mjs",
+    "poc01:benchmark": "node scripts/poc-01/run-benchmark.mjs",
+    "poc01:evaluate": "node scripts/poc-01/evaluate-results.mjs",
+    "test:poc01": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/powershell/poc-01.tests.ps1"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",

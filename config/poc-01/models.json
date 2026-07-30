@@ -1,0 +1,15 @@
+{
+  "models": {
+    "gpt-4o-mini-2024-07-18": {
+      "input_usd_per_million": 0.15,
+      "cached_input_usd_per_million": 0.075,
+      "output_usd_per_million": 0.6
+    },
+    "gpt-4.1-mini-2025-04-14": {
+      "input_usd_per_million": 0.4,
+      "cached_input_usd_per_million": 0.1,
+      "output_usd_per_million": 1.6
+    }
+  },
+  "notes": "Rates are configuration, not source of truth. Confirm current OpenAI pricing before production runs and override with environment variables when needed."
+}
