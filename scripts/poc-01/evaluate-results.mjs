@@ -2,8 +2,9 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.cwd();
-const model = process.env.POC01_MODEL ?? "gpt-4o-mini-2024-07-18";
-const resultDir = path.join(root, ".artifacts", "poc-01", model);
+const model = process.env.POC01_MODEL ?? "openai/gpt-4o-mini";
+const artifactModel = model.replaceAll("/", "__");
+const resultDir = path.join(root, ".artifacts", "poc-01", artifactModel);
 const files = (await readdir(resultDir)).filter((name) => name.endsWith(".result.json"));
 if (files.length === 0) throw new Error(`No benchmark results found in ${resultDir}`);
 
