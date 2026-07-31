@@ -8,13 +8,7 @@ export default defineConfig({
   workers: 1,
   reporter: process.env.CI ? "github" : "list",
   use: {
-    baseURL: "http://127.0.0.1:3100",
-    trace: "on-first-retry"
+    baseURL: "http://172.41.42.51:3004",
+    trace: "on-first-retry",
   },
-  webServer: {
-    command: "pnpm --filter @akilli-alisveris/api dev",
-    url: "http://127.0.0.1:3100/health",
-    reuseExistingServer: !process.env.CI,
-    timeout: 30_000
-  }
 });

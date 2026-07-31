@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akıllı Alışveriş Asistanı</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Akıllı Alışveriş Asistanı</h1>
+      <div class="actions">
+        <span class="badge" title="Veriler gerçek ingestion'dan gelir">Canlı Veri</span>
+        <button id="refresh-button" class="primary" type="button">Yenile</button>
+      </div>
+    </header>
+    <main>
+      <div id="error-banner" class="banner error hidden"></div>
+      <div id="app"><span class="spinner"></span></div>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

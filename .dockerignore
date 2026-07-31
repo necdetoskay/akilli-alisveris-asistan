@@ -62,3 +62,7 @@ tests/powershell/tmp
 # Docker Compose runtime files
 deploy/.env.remote
 docker-compose.yml.backup
+
+# Local data (immutable storage lives on the host volume)
+data
+**/data

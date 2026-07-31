@@ -1,6 +1,8 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+
 function Initialize-DatabaseEnvironment {
     [CmdletBinding()]
     param()

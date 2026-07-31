@@ -12,9 +12,16 @@
     "typecheck": "tsc -p tsconfig.json --noEmit --tsBuildInfoFile .turbo/typecheck.tsbuildinfo"
   },
   "dependencies": {
-    "@akilli-alisveris/config": "workspace:*"
+    "@akilli-alisveris/config": "workspace:*",
+    "@akilli-alisveris/db": "workspace:*",
+    "@akilli-alisveris/extraction": "workspace:*",
+    "@akilli-alisveris/ingestion": "workspace:*",
+    "@akilli-alisveris/storage": "workspace:*",
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.1"
   },
   "devDependencies": {
+    "@types/pg": "^8.11.10",
     "tsx": "^4.19.4"
   }
 }
