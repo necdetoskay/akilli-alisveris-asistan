@@ -27,6 +27,10 @@ try {
 
     Wait-PostgresReady -ComposeFile $ComposeFile
 
+    Invoke-PostgresSql `
+        -ComposeFile $ComposeFile `
+        -Sql "CREATE TABLE IF NOT EXISTS public.schema_migrations (version text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now());" | Out-Null
+
     foreach ($file in $files) {
         $version = [System.IO.Path]::GetFileNameWithoutExtension($file.Name)
         $isApplied = Invoke-PostgresSql `
