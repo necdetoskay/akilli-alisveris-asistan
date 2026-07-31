@@ -1,5 +1,7 @@
 # Coding Agent Prompt — Sprint 00 MVP Vertical Slice
 
+> Bu prompt kullanılmamalıdır. Güncel prompt: `docs/agent-prompts/SPRINT-00-REAL-INGESTION-CODING-AGENT.md`.
+
 Implement Sprint 00 in `akilli-alisveris-asistan`.
 
 Read first:

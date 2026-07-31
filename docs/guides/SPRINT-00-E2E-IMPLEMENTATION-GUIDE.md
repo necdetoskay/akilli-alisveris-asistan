@@ -1,5 +1,7 @@
 # Sprint 00 — Uçtan Uca Uygulama ve Çıktı Alma Guide
 
+> Bu guide ilk planı temsil eder. Güncel ve kanonik guide: `docs/guides/SPRINT-00-REAL-INGESTION-E2E-GUIDE.md`.
+
 Bu belge kod içermez. Sprintin hangi sırada uygulanacağını, her aşamanın beklenen çıktısını ve doğrulama kanıtlarını tarif eder.
 
 ## 1. Başlangıç kontrolü

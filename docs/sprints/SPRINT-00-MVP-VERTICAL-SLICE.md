@@ -1,5 +1,7 @@
 # Sprint 00 — MVP Vertical Slice Foundation
 
+> Bu belge ilk planı temsil eder. Güncel ve kanonik sprint kapsamı: `docs/sprints/SPRINT-00-REAL-BROCHURE-INGESTION.md`.
+
 ## Amaç
 
 Bu sprint, POC çalışmalarından ürün geliştirme aşamasına geçiş sprintidir. Hedef; BİM ve A101 için broşür edinme, değiştirilemez kaynak saklama, gerçek veritabanı ile çalışan sade dashboard ve rol bazlı yükleme akışını uçtan uca kurmaktır.
